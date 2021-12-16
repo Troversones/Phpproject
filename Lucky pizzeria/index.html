@@ -17,9 +17,9 @@
     <div class="banner">
 
     </div>
-    <!-- NAVBAR -->
+    <!-- NAVBAR TEMPLATE
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="kepek/logo.jpg" class="simage" alt="anyas"></a>
+        <a class="navbar-brand" href="index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,9 +44,36 @@
             </ul>
         </div>
     </nav>
+    -->
 
     <!-- CONTAINER -->
-    <div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="kepek/logofasz.png" class="simage img-fluid" alt="anyas"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Etlap.php">Étlap</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Kapcsolat</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Nyeremeny.php">Nyeremény</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
         <div class="row">
             <h1 class="my-5" id="felsocim"><b>Bespeckle Pizzéria</b></h1>
         </div>
@@ -54,18 +81,18 @@
         <div class="row">
             <div class="col col-8">
                 <div class="card">
-                    <img src="" class="card-img-top" alt="xd">
+                    <img src="" class="card-img-top" alt="kep1">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
+                        <h5 class="card-title">Sample text</h5>
                     </div>
                 </div>
                 </a>
             </div>
             <div class="col col-4">
                 <div class="card">
-                    <img src="" class="card-img-top" alt="xd">
+                    <img src="" class="card-img-top" alt="kep2">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
+                        <h5 class="card-title">Sample text</h5>
                     </div>
                 </div>
                 </a>
@@ -73,7 +100,7 @@
         </div>
         
     </div>
-
+    <!-- FOOTER -->
     <footer class="row">
             <div class="col-sm-6 col-lg-4 offset-lg-1">
                 <h2>Kapcsolat</h2>
@@ -91,11 +118,11 @@
                 <div class="input-group mb-3">
                     <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail"
                         aria-describedby="button-addon2" id="inputValue">
-                    <button class="btn btn-success" type="submit" id="button-addon2">Feliratkozás</button>
+                    <button class="btn btn-warning" type="submit" id="button-addon2"><b>Feliratkozás</b></button>
                 </div>
             </div>
         </footer>
-
+    <!-- BOOTSTRAP SCRIPT INSERT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
