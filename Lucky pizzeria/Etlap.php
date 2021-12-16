@@ -16,35 +16,6 @@
     <div class="banner">
 
     </div>
-    <!-- NAVBAR TEMPLATE
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link active" href="index.html">Kezdőlap <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Étlap</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Akciók</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Kapcsolat</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nyeremény</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    -->
-
     <!-- CONTAINER -->
     <div class="container">
         <div class="row">
