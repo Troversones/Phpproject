@@ -1,2 +1,2 @@
 # Phpproject
-All my school project works in one repo
+All my school web project works in one repo
