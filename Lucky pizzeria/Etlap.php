@@ -46,7 +46,9 @@
         </div>
         <div class="row">
             <h1 class="my-5" id="felsocim"><b>Bespeckle - Étlap</b></h1>
+            <hr style="color: white;">
         </div>
+        
         <!-- ROW 2 -->
         <div class="row">
             <div class="col col-8">
@@ -63,24 +65,20 @@
                         <tr>
                             <th scope="row">1</th>
                             <td></td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="col col-4">
-                <table>
-                    <tr>
-                        <th colspan="4" class="thedit"></th>
-                    </tr>
-                </table>
+                
             </div>
         </div>
 
