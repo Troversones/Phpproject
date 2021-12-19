@@ -9,7 +9,7 @@ body{
     background-image: url('kepek/bannerakos.png');
     width: 100%;
     height: 165px;
-    background-color: #004d00;
+    background-color: yellow;
 }
 #felsocim{
     font-family: 'Comforter Brush', cursive;
@@ -27,16 +27,36 @@ body{
 }
 footer{
     position: relative;
+    background-color: yellow;
+    color: black;
     width: 100%;
-    background-color: #004d00;
-    color: yellow;
+    font-size: 18px;
 }
 footer li{
     list-style-type:none;
 }
-.thedit{
-    color: white;
-}
 .content{
     color: white;
+}
+.feher{
+    color: white;
+}
+.tablazatkep{
+    width: 125px;
+    height: 100px;
+}
+#BOTOND td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+thead{
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid gray;
+}
+.tablaxd td{
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid gray;
 }

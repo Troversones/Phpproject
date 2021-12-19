@@ -14,14 +14,14 @@
 
     <!-- BANNER -->
     <div class="banner">
-
     </div>
+    
     <!-- CONTAINER -->
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="kepek/logofasz.png" class="simage img-fluid" alt="anyas"></a>
+                    <a class="navbar-brand" href=""><img src="kepek/logofasz.png" class="simage img-fluid" alt="anyas"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -48,44 +48,186 @@
             <h1 class="my-5" id="felsocim"><b>Bespeckle - Étlap</b></h1>
             <hr style="color: white;">
         </div>
-        
+
         <!-- ROW 2 -->
         <div class="row">
-            <div class="col col-8">
-                <table class="table thedit table-hover table-dark">
-                    <thead>
+            <form method="GET">
+                <button class="btn btn-warning" name="submit" type="submit" id="button-addon2"><b>Alap pizzák</b></button>
+                <button class="btn btn-warning" name="submit1" type="submit" id="button-addon2"><b>Hagyományos Pizzák</b></button>
+                <button class="btn btn-warning" name="submit2" type="submit" id="button-addon2"><b>Extra pizzák</b></button>
+                <button class="btn btn-warning" name="submit3" type="submit" id="button-addon2"><b>Ínyenc pizzák</b></button>
+                <button class="btn btn-warning" name="submit4" type="submit" id="button-addon2"><b>Egyszerűbb pizzák</b></button>
+                <button class="btn btn-warning" name="submit5" type="submit" id="button-addon2"><b>Gyros tálak</b></button>
+                <br>
+                <br>
+            </form>
+            <?php
+
+            if (isset($_GET["submit"])) {
+
+                require('Kapcs.php');
+
+                $query = 'SELECT * FROM etlap WHERE id LIKE "ap%"';
+                $eredm = mysqli_query($db, $query);
+                echo "<br>";
+
+                echo "<table id='BOTOND' class='table-dark tablaxd'>
+                        <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Név</th>
-                            <th scope="col">Feltét</th>
-                            <th scope="col">Ár(méret szerint)</th>
+                            <th scope='col'>Pizza</th>
+                            <th scope='col'>Ár</th>
+                            <th scope='col'>Feltét</th>
+                            <th scope='col'>Előnézet</th>
+                            <th scope='col'>Méret</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>";
+                while ($sor = mysqli_fetch_array($eredm)) {
+                    echo "<tr>";
+                    echo "<td>" . $sor["megnev"] . "</td><td>" . $sor["ar"] . " Ft</td><td>" . $sor["leiras"] . "</td><td><img class='tablazatkep' src='kepek/" . $sor["kep"] . "'></td><td>" . $sor["meret"] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+
+            if (isset($_GET["submit1"])) {
+
+                require('Kapcs.php');
+
+                $query = 'SELECT * FROM etlap WHERE id LIKE "hp%"';
+                $eredm = mysqli_query($db, $query);
+                echo "<br>";
+
+                echo "<table id='BOTOND' class='table-dark tablaxd'>
+                        <thead>
                         <tr>
-                            <th scope="row">1</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <th scope='col'>Pizza</th>
+                            <th scope='col'>Ár</th>
+                            <th scope='col'>Feltét</th>
+                            <th scope='col'>Előnézet</th>
+                            <th scope='col'>Méret</th>
                         </tr>
+                        </thead>";
+                while ($sor = mysqli_fetch_array($eredm)) {
+                    echo "<tr>";
+                    echo "<td>" . $sor["megnev"] . "</td><td>" . $sor["ar"] . " Ft</td><td>" . $sor["leiras"] . "</td><td><img class='tablazatkep' src='kepek/" . $sor["kep"] . "'></td><td>" . $sor["meret"] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+
+            if (isset($_GET["submit2"])) {
+
+                require('Kapcs.php');
+
+                $query = 'SELECT * FROM etlap WHERE id LIKE "ep%"';
+                $eredm = mysqli_query($db, $query);
+                echo "<br>";
+
+                echo "<table id='BOTOND' class='table-dark tablaxd'>
+                        <thead>
                         <tr>
-                            <th scope="row">2</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <th scope='col'>Pizza</th>
+                            <th scope='col'>Ár</th>
+                            <th scope='col'>Feltét</th>
+                            <th scope='col'>Előnézet</th>
+                            <th scope='col'>Méret</th>
                         </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col col-4">
-                
-            </div>
+                        </thead>";
+                while ($sor = mysqli_fetch_array($eredm)) {
+                    echo "<tr>";
+                    echo "<td>" . $sor["megnev"] . "</td><td>" . $sor["ar"] . " Ft</td><td>" . $sor["leiras"] . "</td><td><img class='tablazatkep' src='kepek/" . $sor["kep"] . "'></td><td>" . $sor["meret"] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+
+            if (isset($_GET["submit3"])) {
+
+                require('Kapcs.php');
+
+                $query = 'SELECT * FROM etlap WHERE id LIKE "ip%"';
+                $eredm = mysqli_query($db, $query);
+                echo "<br>";
+
+                echo "<table id='BOTOND' class='table-dark tablaxd'>
+                        <thead>
+                        <tr>
+                            <th scope='col'>Pizza</th>
+                            <th scope='col'>Ár</th>
+                            <th scope='col'>Feltét</th>
+                            <th scope='col'>Előnézet</th>
+                            <th scope='col'>Méret</th>
+                        </tr>
+                        </thead>";
+                while ($sor = mysqli_fetch_array($eredm)) {
+                    echo "<tr>";
+                    echo "<td>" . $sor["megnev"] . "</td><td>" . $sor["ar"] . " Ft</td><td>" . $sor["leiras"] . "</td><td><img class='tablazatkep' src='kepek/" . $sor["kep"] . "'></td><td>" . $sor["meret"] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+
+            if (isset($_GET["submit4"])) {
+
+                require('Kapcs.php');
+
+                $query = 'SELECT * FROM etlap WHERE id LIKE "egp%"';
+                $eredm = mysqli_query($db, $query);
+                echo "<br>";
+
+                echo "<table id='BOTOND' class='table-dark tablaxd'>
+                        <thead>
+                        <tr>
+                            <th scope='col'>Pizza</th>
+                            <th scope='col'>Ár</th>
+                            <th scope='col'>Feltét</th>
+                            <th scope='col'>Előnézet</th>
+                            <th scope='col'>Méret</th>
+                        </tr>
+                        </thead>";
+                while ($sor = mysqli_fetch_array($eredm)) {
+                    echo "<tr>";
+                    echo "<td>" . $sor["megnev"] . "</td><td>" . $sor["ar"] . " Ft</td><td>" . $sor["leiras"] . "</td><td><img class='tablazatkep' src='kepek/" . $sor["kep"] . "'></td><td>" . $sor["meret"] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+
+            if (isset($_GET["submit5"])) {
+
+                require('Kapcs.php');
+
+                $query = 'SELECT * FROM etlap WHERE id LIKE "gt%"';
+                $eredm = mysqli_query($db, $query);
+                echo "<br>";
+
+                echo "<table id='BOTOND' class='table-dark tablaxd'>
+                        <thead>
+                        <tr>
+                            <th scope='col'>Pizza</th>
+                            <th scope='col'>Ár</th>
+                            <th scope='col'>Feltét</th>
+                            <th scope='col'>Előnézet</th>
+                            <th scope='col'>Méret</th>
+                        </tr>
+                        </thead>";
+                while ($sor = mysqli_fetch_array($eredm)) {
+                    echo "<tr>";
+                    echo "<td>" . $sor["megnev"] . "</td><td>" . $sor["ar"] . " Ft</td><td>" . $sor["leiras"] . "</td><td><img class='tablazatkep' src='kepek/" . $sor["kep"] . "'></td><td>" . $sor["meret"] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+            ?>
+
         </div>
 
     </div>
+    
     <!-- FOOTER -->
-    <footer class="row">
+    <footer class="row mt-3">
         <div class="col-sm-6 col-lg-4 offset-lg-1">
+            <br>
             <h2>Kapcsolat</h2>
             <ul>
                 <li><img src="https://img.icons8.com/external-semi-solid-geotatah/25/000000/external-brand-corporate-image-and-brand-management-semi-solid-geotatah.png" /> Bespeckle Pizzéria</li>
@@ -93,15 +235,14 @@
                     Bespeckle@Pizzéria.hu
                 </li>
                 <li><img src="https://img.icons8.com/material-rounded/24/000000/phone--v1.png" /> +36-1-555-5555</li>
+
             </ul>
         </div>
         <div class="col-sm-6 col-lg-4 offset-lg-1">
-            <h2>Zámbó Jimmy merch sorsolás</h2>
-            <p> Iratkozzon fel most!</p>
-            <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2" id="inputValue">
-                <button class="btn btn-warning" type="submit" id="button-addon2"><b>Feliratkozás</b></button>
-            </div>
+            <br>
+            Nyitvatartás -- Héköznap 8:00 - 19:30 <br> Szombat 12:00 - 19:30 <br> Vasárnap - Zárva <br> <br>
+            © 2021 BESPECKLE MAGYARORSZÁG <br>
+            MINDEN JOG FENNTARTVA.
         </div>
     </footer>
     <!-- BOOTSTRAP SCRIPT INSERT -->
