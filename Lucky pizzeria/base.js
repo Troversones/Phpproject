@@ -18,6 +18,3 @@ function ValidateEmail(inputText)
 
     
 }
-function Radioxd(){
-    
-}
