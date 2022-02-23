@@ -1,0 +1,58 @@
+body{
+	background-color:#A8A8A8;
+	font-family: Verdana;
+	font-size:12px;
+}
+#container{
+	width:900px;
+	height:auto;
+	padding: 10px 10px 10px 10px;
+}
+
+header{
+	background: url('kepek/diakmunka6_1200.jpg');
+	background-size: cover;
+	height: 275px;
+	width:900px;
+	padding: 10px 10px 10px 10px;
+}
+
+#menu{
+	width:900px;
+	height: 40px;
+	background-color:#595959;
+	height:auto;	
+	position: sticky;
+	top: 0;
+}
+#content{
+	width:900px;
+	background-color:#757575;
+	padding: 10px 10px 10px 10px;
+}
+
+#footer{
+	width:900px;
+	background-color:black;
+	height:auto;
+	color:white;
+	padding: 10px 10px 10px 10px;
+}
+
+a{
+	color:white;
+}
+a:link{
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+}
+.small-img{
+	width: 217px;
+	height: 125px;
+}
+
+
+
+
